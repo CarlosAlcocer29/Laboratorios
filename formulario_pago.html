@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Registrar Pago</title>
+</head>
+<body>
+    <h2>Registrar Pago</h2>
+    <form action="insertar_pago.php" method="post">
+        <label for="deudor">Deudor:</label>
+        <input type="text" id="deudor" name="deudor" required><br><br>
+        
+        <label for="cuota">Número de Cuota:</label>
+        <input type="number" id="cuota" name="cuota" required><br><br>
+        
+        <label for="cuota_capital">Monto de la Cuota:</label>
+        <input type="number" step="0.01" id="cuota_capital" name="cuota_capital" required><br><br>
+        
+        <label for="fecha_pago">Fecha de Pago:</label>
+        <input type="date" id="fecha_pago" name="fecha_pago" required><br><br>
+        
+        <input type="submit" value="Registrar Pago">
+    </form>
+</body>
+</html>
